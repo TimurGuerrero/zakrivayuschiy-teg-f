@@ -13,4 +13,274 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  font-family: var(--main-font), sans-serif;
+  font-size: var(--main-font-size);
+  font-variation-settings: var(--main-text-weight);
+  justify-items: center;
+}
+
+.wrapper-content {
+  display: block;
+  max-width: 700px;
+  justify-content: center;
+  align-content: center;
+  padding: 100px 0;
+}
+
+.background-image {
+  background-image: var(--background-image);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: top;
+}
+
+.header {
+  max-block-size: 100vw;
+  max-width: var(--section-max-width);
+  font-family: var(--accent-font), sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 100px;
+}
+
+.header__content {
+  display: grid;
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+  border: 2px solid var(--accent-color);
+  padding: clamp(7.5rem, 7.3239rem + 0.7512vw, 8rem) 0;
+  background-color: white;
+}
+
+.header-logo {
+  font-size: var(--logo-font-size);
+  font-weight: 400;
+}
+
+.header-title {
+  font-size: var(--logo-title-font-size);
+}
+
+.main {
+  display: grid;
+  gap: 50px;
+}
+
+.main__content {
+  display: grid;
+  gap: 50px;
+}
+
+.card {
+  background-color: white;
+  border: 2px solid var(--accent-color);
+}
+
+.card-content-title {
+  padding: 4px 24px 4px 10px;
+  font-weight: 700;
+  font-size: var(--main-font-size);
+   border-bottom: 2px solid var(--accent-color);
+}
+
+.card-content-img {
+  aspect-ratio: 1 / 1;
+  position: relative;
+    
+ 
+}
+
+.card-img {
+  display: block;
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+  object-position: 96% 0%; /* УДАЛИТЬ */
+
+}
+
+@supports (-webkit-text-stroke: 1px var(--white-color)) or
+  (text-stroke: 1px var(--white-color)) {
+  .card-img-logo {
+    text-stroke: 1px var(--white-color);
+    -webkit-text-stroke: 1px var(--white-color);
+  }
+}
+
+.card-img-logo {
+  position: absolute;
+  display: block;
+  top: 25px;
+  right: 25px;
+  font-family: var(--accent-font);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  color: currentColor;
+  text-transform: uppercase;
+  text-shadow: -1px -1px 0 var(--color-lable-shadow),
+    1px -1px 0 var(--color-lable-shadow), -1px 1px 0 var(--color-lable-shadow),
+    1px 1px 0 var(--color-lable-shadow);
+  text-stroke: 1px var(--white-color);
+  opacity: 50%;
+}
+
+.card-content {
+  display: grid;
+  gap: 25px;
+  padding: 25px;
+  border-top: 2px solid var(--accent-color);
+}
+
+.card-content-paragrafs {
+  display: grid;
+  gap: 27px;
+}
+
+.card-content-paragraf {
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.card-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 5px;
+}
+
+.button {
+  font-family: var(--accent-font);
+  font-size: 14px;
+  line-height: 90%;
+  border: 2px solid var(--accent-color);
+  background-color: white;
+  align-self: center;
+  position: relative;
+  overflow: hidden;
+  color: white;
+  cursor: pointer;
+}
+
+.button::before {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background: black;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease-in-out;
+}
+
+.button:hover::before {
+  transform: translateX(0%);
+}
+
+.button .button__text {
+  mix-blend-mode: difference;
+}
+
+.button svg {
+  height: 21px;
+  width: 21px;
+  mix-blend-mode: difference;
+}
+
+.card__icon-button {
+  border: none;
+  background-color: inherit;
+  padding: 0;
+  border: 2px solid white;
+  cursor: pointer;
+  max-height: 39px;
+}
+
+.card__icon-button:focus {
+  outline: none;
+}
+
+.card__icon-button:focus-visible {
+  border: 2px solid var(--accent-color);
+  transition: border 0.3s ease;
+}
+
+.card__icon-button-svg {
+  vertical-align: middle;
+}
+
+.card__like-button {
+  min-width: 130px;
+  align-self: auto;
+}
+
+.save-button {
+  display: flex;
+  gap: 8px;
+  padding: 15px 19px;
+  justify-self: center;
+  align-items: center;
+  margin-bottom: 103px;
+}
+
+.dialog-save {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto;
+  gap: 20px;
+  border-width: 1px;
+  transition: opacity 0.3s ease-in-out;
+  inline-size: clamp(341px, -84.25rem + 400vw, 353px);
+  padding: 30px;
+  border: 2px solid var(--accent-color);
+}
+
+.dialog-save svg {
+  grid-row: 1;
+  align-self: center;
+}
+
+.dialog-save:not([open]) {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.dialog-save::backdrop {
+  background-color: rgb(0 0 0 / 0.75);
+}
+
+.dialog-close {
+  text-transform: uppercase;
+  padding: 12.5px 132.5px;
+  grid-column: span 2;
+  margin-top: 10px;
+}
+
+.dialog-text {
+  font-family: var(--accent-font);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  align-self: center;
+}
+
+.button:focus {
+  outline: none;
+  box-shadow: 2px 2px 0 0 var(--accent-color);
+  transition: box-shadow 0.3s ease;
+}
+
+@media (width <= 375px) {
+  .card-img-logo {
+    right: 13px;
+  }
+
+  .save-button {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .save-button svg {
+    width: 28px;
+    height: 28px;
+  }
 }
