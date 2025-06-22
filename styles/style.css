@@ -93,7 +93,6 @@
   inline-size: 100%;
   block-size: 100%;
   object-fit: cover;
-  object-position: 96% 0%; /* УДАЛИТЬ */
 }
 
 @supports (-webkit-text-stroke: 1px var(--text-stroke-color)) or
@@ -109,18 +108,17 @@
   display: block;
   top: 25px;
   right: 25px;
+  text-align: end;
   font-family: var(--accent-font), sans-serif;
   font-weight: var(--font-weight);
   font-size: 14px;
   line-height: 100%;
   color: currentColor;
   text-transform: uppercase;
-  text-shadow: -1px -1px 0 var(--color-lable-shadow),
-    1px -1px 0 var(--color-lable-shadow), -1px 1px 0 var(--color-lable-shadow),
-    1px 1px 0 var(--color-lable-shadow);
   text-stroke: 1px var(--text-stroke-color);
   opacity: 50%;
   z-index: 1;
+  mix-blend-mode: hard-light;
 }
 
 .card-content {
@@ -276,7 +274,6 @@
 .dialog-text {
   font-family: var(--accent-font), sans-serif;
   font-weight: var(--font-weight);
-  
   line-height: 150%;
   text-transform: uppercase;
   align-self: center;
