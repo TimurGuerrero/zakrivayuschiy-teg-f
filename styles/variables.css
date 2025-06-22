@@ -8,11 +8,7 @@
   --logo-font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   --logo-title-font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   --section-paddind-header: clamp(375px, 48.61vw, 1440px);
-  --background-image: repeating-linear-gradient(
-      90deg,
-      #d3d3d3 0 2px,
-      transparent 2px 4px
-    ),
+  --background-image: repeating-linear-gradient(90deg,#d3d3d3 0 2px, transparent 2px 4px),
     repeating-linear-gradient(180deg, #d3d3d3 0 2px, transparent 2px 4px),
     linear-gradient(180deg, #e7e7e7 0.01%, #1a1a1a 100%);
   --color-lable-shadow: gray;

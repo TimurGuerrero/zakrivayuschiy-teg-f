@@ -7,7 +7,6 @@
 ✦ card__icon-button — для кнопки, оборачивающей иконку
 ✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
 ✦ button__text — для обозначения текстового элемента внутри кнопки
-
 */
 
 .page {
@@ -182,7 +181,6 @@
 }
 
 .card__icon-button {
-  border: none;
   background-color: inherit;
   padding: 0;
   border: 2px solid white;
