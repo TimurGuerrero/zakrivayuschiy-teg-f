@@ -2,8 +2,8 @@
 :root {
   --main-font: "Inter";
   --accent-font: "PressStart2P";
-  --title-font-weight: 700;
-  --main-font-weight: 400;
+  --font-weight-title: 700;
+  --font-weight: 400;
   --main-font-size: 18px;
   --logo-font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   --logo-title-font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
@@ -13,7 +13,7 @@
     linear-gradient(180deg, #e7e7e7 0.01%, #1a1a1a 100%);
   --color-lable-shadow: gray;
   --accent-color: black;
-  --white-color: white;
+  --text-stroke-color: white;
   --contour-color-heard: black;
   --animation-fill-color-heard: red;
   --border-style: 2px solid var(--accent-color);

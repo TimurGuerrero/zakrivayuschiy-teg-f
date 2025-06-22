@@ -14,7 +14,7 @@
   min-block-size: 100dvb;
   font-family: var(--main-font), sans-serif;
   font-size: var(--main-font-size);
-  font-variation-settings: var(--main-text-weight);
+  font-variation-settings: 'wght' var(--font-weight);
   justify-items: center;
 }
 
@@ -53,7 +53,7 @@
 
 .header-logo {
   font-size: var(--logo-font-size);
-  font-weight: 400;
+  font-weight: var(--font-weight);
 }
 
 .header-title {
@@ -77,7 +77,7 @@
 
 .card-content-title {
   padding: 4px 24px 4px 10px;
-  font-weight: 700;
+  font-weight: var(--font-weight-title);
   font-size: var(--main-font-size);
   border-bottom: var(--border-style);
 }
@@ -95,11 +95,11 @@
   object-position: 96% 0%; /* УДАЛИТЬ */
 }
 
-@supports (-webkit-text-stroke: 1px var(--white-color)) or
-  (text-stroke: 1px var(--white-color)) {
+@supports (-webkit-text-stroke: 1px var(--text-stroke-color)) or
+  (text-stroke: 1px var(--text-stroke-color)) {
   .card-img-logo {
-    text-stroke: 1px var(--white-color);
-    -webkit-text-stroke: 1px var(--white-color);
+    text-stroke: 1px var(--text-stroke-color);
+    -webkit-text-stroke: 1px var(--text-stroke-color);
   }
 }
 
@@ -109,7 +109,7 @@
   top: 25px;
   right: 25px;
   font-family: var(--accent-font), sans-serif;
-  font-weight: 400;
+  font-weight: var(--font-weight);
   font-size: 14px;
   line-height: 100%;
   color: currentColor;
@@ -117,7 +117,7 @@
   text-shadow: -1px -1px 0 var(--color-lable-shadow),
     1px -1px 0 var(--color-lable-shadow), -1px 1px 0 var(--color-lable-shadow),
     1px 1px 0 var(--color-lable-shadow);
-  text-stroke: 1px var(--white-color);
+  text-stroke: 1px var(--text-stroke-color);
   opacity: 50%;
   z-index: 1;
 }
@@ -135,7 +135,7 @@
 }
 
 .card-content-paragraf {
-  font-weight: 400;
+  font-weight: var(--font-weight);
   line-height: 21px;
 }
 
@@ -273,7 +273,7 @@
 
 .dialog-text {
   font-family: var(--accent-font) sans-serif;
-  font-weight: 400;
+  font-weight: var(--font-weight);
   font-size: 14px;
   line-height: 150%;
   text-transform: uppercase;
