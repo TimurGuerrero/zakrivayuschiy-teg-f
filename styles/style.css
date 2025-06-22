@@ -208,25 +208,25 @@
 }
 
 .img-2 {
-  filter: grayscale(100%);
+  filter: grayscale(100%) blur(2px);
 }
 .img-3 {
-  filter: sepia(80%);
+  filter: sepia(80%) brightness(1.2);
 }
 .img-4 {
-  filter: blur(2px);
+  filter: contrast(150%) hue-rotate(45deg);
 }
 .img-5 {
-  filter: brightness(1.2);
+  filter: blur(1px) brightness(1.5);
 }
 .img-6 {
-  filter: contrast(150%);
+  filter: grayscale(60%) contrast(120%);
 }
 .img-7 {
-  filter: hue-rotate(90deg);
+  filter: sepia(100%) invert(1);
 }
 .img-8 {
-  filter: invert(100%);
+  filter: hue-rotate(180deg) saturate(2);
 }
 
 .save-button {
