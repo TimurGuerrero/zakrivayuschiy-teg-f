@@ -119,6 +119,7 @@
     1px 1px 0 var(--color-lable-shadow);
   text-stroke: 1px var(--white-color);
   opacity: 50%;
+  z-index: 1;
 }
 
 .card-content {
@@ -204,6 +205,28 @@
 .card__like-button {
   min-width: 130px;
   align-self: auto;
+}
+
+.img-2 {
+  filter: grayscale(100%);
+}
+.img-3 {
+  filter: sepia(80%);
+}
+.img-4 {
+  filter: blur(2px);
+}
+.img-5 {
+  filter: brightness(1.2);
+}
+.img-6 {
+  filter: contrast(150%);
+}
+.img-7 {
+  filter: hue-rotate(90deg);
+}
+.img-8 {
+  filter: invert(100%);
 }
 
 .save-button {
