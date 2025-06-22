@@ -1,1 +1,1 @@
-https://github.com/TimurGuerrero/zakrivayuschiy-teg-f
+https://timurguerrero.github.io/zakrivayuschiy-teg-f/
