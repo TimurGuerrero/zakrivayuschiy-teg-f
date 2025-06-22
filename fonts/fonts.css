@@ -20,3 +20,10 @@
   font-style: normal;
   font-display: swap;
 }
+
+@supports (font-variation-settings: normal) {
+  body {
+    font-family: var(--main-font), sans-serif;
+    font-family: var(--accent-font), sans-serif;
+  }
+}
