@@ -37,7 +37,7 @@
 .header {
   max-block-size: 100vw;
   max-width: var(--section-max-width);
-  font-family: var(--accent-font), sans-serif;
+  font-family: var(--accent-font), fantasy;
   text-transform: uppercase;
   margin-bottom: 100px;
 }
@@ -109,7 +109,7 @@
   top: 25px;
   right: 25px;
   text-align: end;
-  font-family: var(--accent-font), sans-serif;
+  font-family: var(--accent-font), fantasy;
   font-weight: var(--font-weight);
   font-size: 14px;
   line-height: 100%;
@@ -145,7 +145,7 @@
 }
 
 .button {
-  font-family: var(--accent-font), sans-serif;
+  font-family: var(--accent-font), fantasy;
   font-size: 14px;
   line-height: 90%;
   border: var(--border-style);
@@ -234,7 +234,6 @@
   padding: 15px 19px;
   justify-self: center;
   align-items: center;
-  margin-bottom: 103px;
 }
 
 .dialog-save {
@@ -272,7 +271,7 @@
 }
 
 .dialog-text {
-  font-family: var(--accent-font), sans-serif;
+  font-family: var(--accent-font), fantasy;
   font-weight: var(--font-weight);
   line-height: 150%;
   text-transform: uppercase;
