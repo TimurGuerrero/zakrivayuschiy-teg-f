@@ -71,7 +71,19 @@
   gap: 50px;
 }
 
+.main__content .cards li {
+  list-style-type: none;
+}
+
+.cards {
+  all: inherit;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
 .card {
+  all: inherit;
   background-color: var(--main-background-color);
   border: var(--border-style);
 }
@@ -98,6 +110,7 @@
 @supports (-webkit-text-stroke: 1px var(--text-stroke-color)) or
   (text-stroke: 1px var(--text-stroke-color)) {
   .card-img-logo {
+    text-shadow: none;
     text-stroke: 1px var(--text-stroke-color);
     -webkit-text-stroke: 1px var(--text-stroke-color);
   }
@@ -116,6 +129,9 @@
   color: currentColor;
   text-transform: uppercase;
   text-stroke: 1px var(--text-stroke-color);
+  text-shadow: -1px -1px 0 var(--text-stroke-color),
+    1px -1px 0 var(--text-stroke-color), -1px 1px 0 var(--text-stroke-color),
+    1px 1px 0 var(--text-stroke-color);
   opacity: 50%;
   z-index: 1;
   mix-blend-mode: hard-light;
